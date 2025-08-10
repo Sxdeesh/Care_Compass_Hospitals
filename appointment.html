@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="appointment">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan your visit</title>
+    <link rel="icon" type="image/png" href="images/—Pngtree—letter c logo png_7693294.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbca410c05.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="icon" src="images/—Pngtree—letter c logo png_7693294.png"></a>
+        <a class="name" href="index.html">CARE COMPASS HOSPITAL</a>
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="finddoc.html">Find a doctor</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="menuicon"><i class="fa-solid fa-bars"></i></div>
+        <div class="accbtn">
+            <a href="login.html">
+                <button class="btns">
+                    <p class="loginicon"><i class="fa-solid fa-user"></i></p>Login
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="appointments">
+            <div class="mainheading">
+                <h1>Plan your visit</h1>
+            </div>
+            <div class="appointment-form">
+                <form action="appointment.php" method="POST">
+                    <h2>Book an appointment at Care Compass</h2>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter your Full Name" required name="fullname">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" required name="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Phone Number" required name="phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" placeholder="Date of Visit" required name="date">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <div class="form-group">
+                        <select name="doctor" id="Doctor">
+                            <option value="" disabled selected>Select your doctor</option>
+                            <option value="Dr. John Smith - Cardiologist">Dr. John Smith - Cardiologist</option>
+                            <option value="Dr. Emily Brown - Oncologist">Dr. Emily Brown - Oncologist</option>
+                            <option value="Dr. Michael Johnson - Endocrinologist">Dr. Michael Johnson - Endocrinologist
+                            </option>
+                            <option value="Dr. Sarah Davis - Pulmonologist">Dr. Sarah Davis - Pulmonologist</option>
+                            <option value="Dr. Robert Wilson - Neurologist">Dr. Robert Wilson - Neurologist</option>
+                            <option value="Dr. Jessica Miller - Nephrologist">Dr. Jessica Miller - Nephrologist</option>
+                            <option value="Dr. David Anderson - Gastroenterologist">Dr. David Anderson -
+                                Gastroenterologist</option>
+                            <option value="Dr. Laura Martinez - Rheumatologist">Dr. Laura Martinez - Rheumatologist
+                            </option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btnaccount">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="footer-column">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="appointment.html">Plan your visit</a></li>
+                    <li><a href="finddoc.html">Find a doctor</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html">Emergency Services</a></li>
+                    <li><a href="services.html">Primary Care</a></li>
+                    <li><a href="services.html">Specialty Care</a></li>
+                    <li><a href="services.html">Surgical Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Find a doctor</h3>
+                <ul>
+                    <li><a href="finddoc.html">Primary Care</a></li>
+                    <li><a href="finddoc.html">Specialty Care</a></li>
+                    <li><a href="services.html">Surgical Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><a href="contact.html">071 3152 719</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footer-legal">
+                <p>
+                    <a href="#">Terms & Conditions</a> |
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Accessibility Statement</a>
+                </p>
+                <p>&copy; 2021 Care Compass Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
